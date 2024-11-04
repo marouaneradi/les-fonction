@@ -10,3 +10,16 @@ def remplirTableau():
 #jeu de test (test unitaire)
 notesStagiaires = remplirTableau()
 print("Les notes des stagiaires sont :", notesStagiaires)
+
+#2 Fonction pour trouver le maximum et le minimum
+def maxMinNotes(notes):
+    maxNote = max(notes)
+    minNote = min(notes)
+    return (maxNote, minNote)
+
+#jeu de test (test unitaire)
+if __name__ == "__main__":
+    notes = remplirTableau()
+    resultat = maxMinNotes(notes)
+    print(f"Le maximum est {resultat[0]} et le minimum est {resultat[1]}.")
+
