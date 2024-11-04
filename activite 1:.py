@@ -7,6 +7,6 @@ def remplirTableau():
         tableau_notes.append(note)
 
     return tableau_notes
-
+#jeu de test (test unitaire)
 notesStagiaires = remplirTableau()
 print("Les notes des stagiaires sont :", notesStagiaires)
